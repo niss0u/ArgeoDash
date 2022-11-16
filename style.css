@@ -1,0 +1,304 @@
+/* Styles CSS créés par Apix pour le site internet d'Armus */
+/* Modifiés par Apix pour ArgeoDash */
+
+/* Import de la police et des icônes */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons+Round);
+
+:root {
+  --text: #24292f;
+  --bg: #ffffff;
+  --code: #e9e9e9;
+  --ref: #fcc12c;
+  --ref2: #5dadec;
+  --ref3: #be1931;
+  --fnt-size: 20px;
+  --scroll-size: 60px;
+  --scroll-border-size: 6px;
+  --table: #5c5c5c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', serif;
+  font-size: var(--fnt-size);
+  color: var(--text);
+  background-color: var(--bg);
+  margin: 0;
+}
+
+@media (prefers-color-scheme:dark) {
+  :root {
+    --text: #ffffff;
+    --bg: #0d1117;
+    --code: #24292f;
+    --ref: #ffcc4d;
+    color-scheme: dark;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --fnt-size: 17.5px;
+    --scroll-size: 35px;
+    --scroll-border-size: 4px;
+  }
+}
+
+a {
+  color: #518ef0;
+}
+
+img {
+  border-radius: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid var(--table);
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 21.788px;
+}
+
+.members-table img {
+  height: min(50vw, 300px);
+}
+
+.summary,
+.summary th,
+.summary td {
+  border: 0;
+  line-height: 1.2em;
+  font-weight: 500;
+}
+
+.summary th {
+  border-bottom: 1px solid var(--text);
+}
+
+.summary h2 {
+  margin: 0;
+  margin-bottom: .2em;
+}
+
+.summary a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: .8em;
+  background-color: var(--code);
+  border-radius: 6px;
+  white-space: nowrap;
+  font-family: Consolas, Menlo, Monaco, "Lucida Console, Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+}
+
+li {
+  line-height: 1.5em;
+}
+
+.ref {
+  text-decoration: none;
+  color: var(--ref);
+  font-weight: 600;
+  text-shadow: 0 0 10px var(--ref);
+}
+
+.ref2 {
+  text-decoration: none;
+  color: var(--ref2);
+  font-weight: 600;
+  text-shadow: 0 0 10px var(--ref2);
+}
+
+.ref3 {
+  text-decoration: none;
+  color: var(--ref3);
+  font-weight: 600;
+  text-shadow: 0 0 10px var(--ref3);
+}
+
+.material-icons-round {
+  font-size: 30px;
+}
+
+#one {
+  color: #ffffff;
+  background: linear-gradient(145deg, #240000 0%, #790909 35%, #ff0000 100%);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: .1em;
+  margin: 0;
+  padding: 0;
+}
+
+/* Start languages colors */
+
+/* English */
+#one.color-en {
+  background: linear-gradient(145deg, #0f00e0 0%, #0b00a3 35%, #0284cf 100%);
+}
+
+#one.color-es {
+  background: linear-gradient(145deg, #fffb00 10%, #ff2600 50%, #ffe100 100%);
+}
+/* End Languages colors */
+
+#one h1 {
+  font-size: min(12.5vw, 135px);
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.scroll {
+  height: var(--scroll-size);
+  width: var(--scroll-size);
+  border: var(--scroll-border-size) solid #ffffff;
+  border-radius: var(--scroll-size);
+  color: white;
+  font-size: var(--scroll-size);
+}
+
+.svgicon {
+  height: 1em;
+  width: 1em;
+  display: inline-flex;
+  align-self: center;
+  top: .125em;
+  position: relative;
+}
+
+#two {
+  margin: 8px;
+}
+
+.line-image img {
+  width: min(100%, 800px);
+}
+
+.menu {
+  border: 5px solid var(--text);
+  border-radius: 50px;
+  padding: 7.5px;
+  width: fit-content;
+  margin: auto;
+}
+
+.menu span {
+  font-size: 35px;
+  color: var(--text);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.topback {
+  height: 40px;
+  background: linear-gradient(145deg, #2b0000 0%, #790909 35%, #ff0000 100%);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.topback a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.topback h4 {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -0.1em;
+  border-radius: 0;
+}
+
+.spaceline {
+  height: 2px;
+  border-radius: 1px;
+  width: 75vw;
+  background-color: var(--ref);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.goldlink a {
+  color: var(--ref);
+  text-decoration: none;
+  border-bottom: 1.5px solid;
+}
+
+blockquote {
+  border-left: 5px solid var(--code);
+  padding-left: 7.5px;
+}
+
+/* Test navbar */
+
+.navbar {
+  height: 2.25em;
+  background-color: var(--code);
+}
+
+.navbar ul {
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar ul li {
+  list-style: none;
+  font-size: 15px;
+  text-decoration: none;
+  float: left;
+  display: block;
+  padding: 10px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.navbar ul li a:hover {
+  color: #518ef0;
+}
+
+/* navbar end */
+
+.langpick {
+  text-align: center;
+  font-size: 2em;
+}
+
+.langpick .used {
+  filter: grayscale(1);
+}
+
+.dotlined {
+  border-bottom: 2px var(--table) dashed;
+}
